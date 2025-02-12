@@ -46,8 +46,8 @@ function displayac() {
     var imageContainer = document.getElementById('image-container');
     // Create a new Image element for the ac
     var acImage = new Image();
-    // Set the source (file path) for the cat image
-    catImage.src = 'ac.gif'; // Assuming the ac image is named "ac.gif"
+    // Set the source (file path) for the ac image
+    acImage.src = 'ac.gif'; // Assuming the ac image is named "ac.gif"
     // Set alternative text for the image (for accessibility)
     acImage.alt = 'ac';
     // When the ac image is fully loaded, add it to the image container
@@ -64,7 +64,7 @@ function displayanji() {
     var imageContainer = document.getElementById('image-container');
     // Create a new Image element for the anji
     var anjiImage = new Image();
-    // Set the source (file path) for the cat-heart image
+    // Set the source (file path) for the anji image
     anjiImage.src = 'anji.gif'; // Assuming the anji image is named "anji.gif"
     // Set alternative text for the image (for accessibility)
     anjiImage.alt = 'anji';
