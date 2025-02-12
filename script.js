@@ -40,36 +40,36 @@ function flashRainbowColors(callback) {
     }, 2000); // Flash colors for 2 seconds
 }
 
-// Function to display the ac.gif initially
-function displayac() {
-    // Get the container where the image will be displayed
-    var imageContainer = document.getElementById('image-container');
-    // Create a new Image element for the ac
-    var acImage = new Image();
-    // Set the source (file path) for the ac image
-    acImage.src = 'ac.gif'; // Assuming the ac image is named "ac.gif"
-    // Set alternative text for the image (for accessibility)
-    acImage.alt = 'ac';
-    // When the ac image is fully loaded, add it to the image container
-    acImage.onload = function() {
-        imageContainer.appendChild(acImage);
-    };
-}
-
-// Function to display the anji.gif
+// Function to display the anji.gif initially
 function displayanji() {
-    // Clear existing content in the image container
-    document.getElementById('image-container').innerHTML = '';
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
     // Create a new Image element for the anji
     var anjiImage = new Image();
-    // Set the source (file path) for the anji image
+    // Set the source (file path) for the ac image
     anjiImage.src = 'anji.gif'; // Assuming the anji image is named "anji.gif"
     // Set alternative text for the image (for accessibility)
     anjiImage.alt = 'anji';
     // When the anji image is fully loaded, add it to the image container
     anjiImage.onload = function() {
+        imageContainer.appendChild(acImage);
+    };
+}
+
+// Function to display the ac.gif
+function displayanji() {
+    // Clear existing content in the image container
+    document.getElementById('image-container').innerHTML = '';
+    // Get the container where the image will be displayed
+    var imageContainer = document.getElementById('image-container');
+    // Create a new Image element for the ac
+    var acImage = new Image();
+    // Set the source (file path) for the anji image
+    acImage.src = 'ac.gif'; // Assuming the ac image is named "ac.gif"
+    // Set alternative text for the image (for accessibility)
+    acImage.alt = 'ac';
+    // When the ac image is fully loaded, add it to the image container
+    acImage.onload = function() {
         imageContainer.appendChild(anjiImage);
         // Hide the options container
         document.getElementById('options').style.display = 'none';
