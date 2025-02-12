@@ -7,7 +7,7 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayac(); // Display the ac.gif
+            displayanji(); // Display the anji.gif
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
